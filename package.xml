@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>hover_test_mavros</name>
+  <version>0.0.0</version>
+  <description>Single UAV hover for ArduPilot over MAVROS: GUIDED + arm + takeoff to a fixed hover altitude, keyboard-driven moves in mocap coordinates, and LAND. MAVROS port of hover_test (PX4 uXRCE-DDS).</description>
+  <maintainer email="a0929370607@gmail.com">root</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>mavros_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
